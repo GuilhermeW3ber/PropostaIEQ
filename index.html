@@ -8,7 +8,7 @@
     <title>Proposta JCP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./Src/Icones/ágora_logo_branco.png" type="image/x-icon">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -53,24 +53,83 @@
         <div class="mainContainer">
             <div class="mainContent">
                 <div class="containerContent">
-                    <h1>Prezado Eng. Ricardo, </h1>
-                    <p>Segue em proposta o orçamento referente ao serviço de programação do site para a empresa JCP. </p>
+                    <h1>Prezado <br> <span> Pastor Mário</span>, </h1>
+                    <p>"Segue em proposta o orçamento referente ao serviço de programação do site para a empresa JCP. </p>
                     <p>Estamos felizes em contribuir com nosso trabalho ao crescimento de sua empresa. Esperamos que esta proposta possa elucidar e mostrar as soluções que poderão alcançar conosco.</p>
-                    <p>Será um prazer trabalhar com a JCP.</p>
+                    <p>Será um prazer trabalhar com a JCP."</p>
                 </div>
-                <a>- Guilherme Weber, Ágora</a>
+                <p>- <span>Guilherme Weber</span>, Ágora</p>
             </div>
         </div>
     </div>
-    <div class="sub" id="servico">
+    <div class="background-color" style="background-color: #121212;" id="services-demo">
+        <div class="servicesText">
+          <h1>Sobre Nós</h1>
+          <h2>Ágora é empresa especializada em desenvolvimento de aplicações e marketing para ajudar as marcas a permanecerem à frente. Como agência digital e software house, nossa equipe oferece um trabalho em escala para atingir seus objetivos.</h2>
+        </div>
+        <div class="owl-container">
+          <div id="owl-demo" class="owl-carousel">
+            <div class="item">
+              <div class="item-text-container">
+                <div class="servicesCard"  id="veloxEventos"></div>
+                <h1>Velox Eventos</h1>
+                <h2>Desenvolvimento Web</h2>
+                <a target="_blank" rel="noreferrer noopener" href="https://www.veloxeventos.com.br">Visitar</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-text-container">
+                <div class="servicesCard" id="dornelles"></div>
+                <h1>Dornelles</h1>
+                <h2>Desenvolvimento Web</h2>
+                <a target="_blank" rel="noreferrer noopener" href="http://consultoriadornelles.com.br">Visitar</a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-text-container">
+                <div class="servicesCard" id="dryTech"></div>
+                <h1>DryTech</h1>
+                <h2>Desenvolvimento Web</h2>
+                <a target="_blank" rel="noreferrer noopener" href="https://drywallcuritiba.com.br">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="background-color" style="background-color: #121212;">
+        <div class="servicesText">
+            <h1>Sobre o Serviço</h1>
+            <h2>O software encomandado é desenvolvido como um sistema para gerenciamento de estoque. Cada item deve ser dividido em categoria e demais atributos identificatórios em estrutura de prontuário.</h2>
+        </div>
+            <div class="more-container">
+                <div class="info-container" id="mission">
+                    <div class="more-img">
+                        <img id="more-img" src="./Src/GD_imgSemImagem.png" alt="">
+                    </div>
+                    <div class="info-text">
+                        <div class="more-cards">
+                            <h1>Núvem</h1>
+                            <h2>Use em qualquer lugar, tenha as informações de seu negócio guardadas em Núvem.</h2>
+                        </div>
+                        <div class="more-cards">
+                            <h1>Acompanhamento</h1>
+                            <h2>O aplicativo possibilitará o acompanhamento dos itens em estoque e sua disponibilização.</h2>
+                        </div>
+                        <div class="more-cards">
+                            <h1>Prontuário </h1>
+                            <h2>Cada item em estoque receberá observações, informações de valor e imagens de nota fiscal e histórico de transporte.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="sub" id="servico">
         <div class="mainContainer" style="background: transparent;">
             <div class="mainContent">
                 <div class="subContent">
                     <h1>Escopo do Serviço</h1>
                     <p>Visando encaixar seu site na realidade da construção civil, é possível apresentar 4 tipos de solução conforme o orçamento disponibilizado, magnitude e intuito do projeto:</p>
-                    <!-- <div class="subContent2">
-                        <p>Caso hajam dúvidas com relação ao conteúdo de cada produto, estamos a disposição para contato apertando o Icone do WhatsApp ao canto inferior da tela.</p>
-                    </div> -->
                 </div> 
             </div>
         </div>
@@ -106,7 +165,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="direitos">
         <p>© 2023 Ágora. All Rights Reserved.</p>
     </div>
@@ -116,8 +175,11 @@
             <img src="./Src/Icones/whatsapp.png" alt="" >
         </a>
     </div> 
-
-    <script src="config.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+    <script src="./Src/Js/config.js"></script>
+    <script src="./Src/Js/agoraCarousel.js"></script>
 </body>
 
 </html>
