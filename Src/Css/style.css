@@ -9,8 +9,11 @@
     scroll-behavior: smooth;
     scroll-behavior: smooth;
     /* font-family: 'Poppins', sans-serif; */
-    /* font-family: 'Futura Std', sans-serif; */
-    
+    /* font-family: 'Futura Std', sans-serif; */    
+}
+
+body{
+    background-color: #131313;
 }
 
 .main {
@@ -303,9 +306,8 @@
 }
 
 .sub{
-    background-image: linear-gradient(rgb(36,36,36), rgb(56,56,56)), url(./Src/escopo.png);
+    background:#1A1A1A;
     background-size: 100vw;
-    
     padding-bottom: 60px;
 }
 
@@ -431,7 +433,7 @@
     padding: 0 20px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 5vw;
 }
 
 .mainContent {
@@ -672,22 +674,51 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-top: -200px;
+    padding-top: 50px;
     margin-bottom: 0px;
+
 }
 
-/* .servicesCard {
-    margin: 10px;
-    height: 450px;
-    width: 300px;
-    border-radius: 4px;
+.servicesCard{
+    height: 25vw;
+    width: 100%;
+    border-radius: 1px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    background-color:rgb(56,56,56);
     transition: 0.3s ease-in;
-    outline: #CD7F32 1px solid;
+    padding: 3rem 2rem 2.5rem;
+    background:#1A1A1A;
+    /* border-radius: 20px;  */
+    max-width: 480px;
+    max-height: 480px;
+}
+
+.servicesCard h1{
+    font-weight: 100px;
+    text-align: center;
+}
+
+.servicesCard h2{
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.servicesCard h3{
+    color: #ffffff;
+    font-weight: 550;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+
+.servicesCard p{
+    color: #ffffff;
+    font-weight: 200px;
 }
 
 .servicesCard img{
@@ -695,40 +726,6 @@
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
-.servicesCard h2 {
-    text-align: center;
-    width: 80%;
-}
-
-.servicesCard p {
-    text-align: center;
-    margin-top: 24px;
-    font-size: 20px;
-    width: 80%;
-}
-
-.servicesButton {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.servicesCard button {
-    color: #FFFFFF;
-    padding: 14px 24px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #131313;
-    font-size: 1rem;
-}
-
-.servicesCard:hover {
-    transform: scale(1.075);
-    transition: 0.3s ease-in;
-    cursor: pointer;
-} */
 
 .whats{
     position: fixed;
@@ -759,11 +756,6 @@
 }
 
 @media screen and (max-width:1300px) {
-    .servicesWrapper {
-        grid-template-columns: 1fr 1fr;
-    }
-
-   
 
     .whats img{
         width: 40px;
@@ -775,6 +767,12 @@
     .whats {
         right: 20px;
         bottom: 20px;
+    }
+}
+
+@media(max-width:1500px){
+    .servicesWrapper {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -939,7 +937,7 @@
         color: #FFFFFF;
         transition: 0.3s ease-in;
         padding: 3rem 2rem 2.5rem;
-        background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7));
+        background:#1A1A1A;
     }
 
     .servicesText{
@@ -1022,8 +1020,8 @@
 @media screen and (max-width:1100px) {
     .owl-container{
         text-align: start;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         color: white;
         margin-left: 20px;
         margin-right: 20px;
@@ -1040,45 +1038,19 @@
     }
 }
 
+.info-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 100px; 
+}
+
 .item-text-container{
     height: 500px;
     margin: 10px;
     color: #fff;
-}
-
-.servicesCard{
-    height: 25vw;
-    width: 100%;
-    border-radius: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
-    transition: 0.3s ease-in;
-    padding: 3rem 2rem 2.5rem;
-    background: linear-gradient(rgba(22, 22, 22, 0.7), rgba(22, 22, 22, 0.7));
-    /* border-radius: 20px;  */
-    max-width: 480px;
-    max-height: 480px;
-}
-
-.servicesCard h1{
-    font-weight: 100px;
-    text-align: center;
-}
-
-.servicesCard h2{
-    color: #ffffff;
-    font-weight: 550;
-    font-size: 20px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-.servicesCard p{
-    color: #ffffff;
-    font-weight: 200px;
 }
 
 .more{
@@ -1198,17 +1170,33 @@
         text-align: center;
     }
 
-
     .more-container{
         margin-top: 0px;
     }
 }
 
-.info-container{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap; 
+.priceContainer{
+    text-align: left;
+    padding: 0px 10vw 70px;
+}
+
+.priceContainer a{
+    font-size: 26px;
+    background: #141414;
+    padding: 10px 0;
+    transition: 0.25s ease-in-out;
+    cursor:default;
+    color: #FFF;
+}
+
+.warningContainer{
     text-align: center;
-    justify-content: center;
-    margin-bottom: 100px; 
+    padding: 5px 10vw;
+    background: rgb(202, 35, 35);
+    color: #fff;
+}
+
+.warningContainer h2{
+   font-size: 20px;
+   font-weight: 200;
 }
